@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RICERCA PER LAVORO E POSIZIONE</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div id="contenitore">
+        <!--NAVBAR FISSA-->
+        <header id="navbar">
+            <ul>
+                <li class="listitem">
+                    <a href="index.html"><i class="fa-solid fa-house"></i> <!--icona home--></a>
+
+                </li>
+                <li class="listitem"><i onclick=" window.location.reload()" class="fa-solid fa-arrow-rotate-right"></i>
+                </li> <!--icona ricarica-->
+
+            </ul>
+
+            <ul>
+                <li>
+                    <label for="eMail"></label><input class="inputNavBar" type="email"
+                        placeholder="Inserisci la tua mail" />
+                </li>
+                <li>
+                    <label for="password"></label><input class="inputNavBar" type="password"
+                        placeholder="Inserisci password">
+                </li>
+                <li class="listitem">
+                    <i class="fa-solid fa-circle-user"></i><!--icona user-->
+                </li>
+            </ul>
+        </header>
+
+        <!--CREO IL FORM CHE PRENDERA I DOCUMENTI-->
+        <form id="form" action="">
+            <!--PRIMA LABEL PER INSERIRE LA POSIZIONE LAVORATIVA-->
+            <label class="labelAspetto" for="posizioneLavorativa">Posizione Lavorativa Ricercata:</label><input
+                placeholder="Scrivi la posizione Lavorativa che stai carcando" class="inputAspetto" value=""
+                id="posizioneLavorativa" type="text">
+            <!--SECONDA LABEL PER LA POSIZIONE GEOGRAFICA-->
+            <label class="labelAspetto" for="luogo">Posizione Geografica</label><input
+                placeholder="Scrivi quì dove stai carcando" class="inputAspetto" value="" id="luogo" type="text">
+            <!--BOTTONE-->
+            <button class="button" onclick="ricerca()" id="myButton" type="button">CERCA</button>
+        </form>
+    </div>
+
+    <div id="risultato">
+        <p id="conteggio">
+
+        </p>
+        <ul id="listaUl">
+
+        </ul>
+
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a46947b585.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
